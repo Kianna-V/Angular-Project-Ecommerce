@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color:cadetblue
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+button {
+  background-color: bisque;
+  border: 10px;
+  margin: 1px;
+  size: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

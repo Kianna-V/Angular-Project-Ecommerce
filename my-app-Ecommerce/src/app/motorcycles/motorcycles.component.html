@@ -1,0 +1,27 @@
+<h1>Motorcycles</h1>
+
+ <!-- <mat-form-field>
+    <mat-label>Models</mat-label>
+     <mat-select (selectionChange)= 'filterItems($event)' >
+        <mat-option value="Super Sport">Super Sport</mat-option>
+      <mat-option value="Sport Bike">Sport Bike</mat-option>
+      <mat-option value="Naked Bike">Naked Bike</mat-option>
+    </mat-select>
+  </mat-form-field>>
+-->
+
+<div>
+<label>Filter Model: </label>
+<input [(ngModel)] = 'model'>
+<button type="button"(click)="onModelFilter()">Search</button>
+<button type="button" (click)="onModelClear()">Clear</button>
+</div>
+<div class = "wrapper" [ngClass]="{favorite:m.fav}" *ngFor="let m of motorcycles|filter: searchModel : 'model'">
+  <h3>{{m.brand}} ({{m.model}}) ({{m.name}})</h3>
+  <h4>{{m.price}}</h4><br>
+<button (click) = "setFavorite(m)">Favorite</button><button (click)="addToSc(m)">Add To Cart</button>
+</div>
+
+
+
+
